@@ -40,8 +40,15 @@ namespace skf
                 string MSG = "";
                 foreach (SiglusKeyFinder.KeyFinder.Key Key in Keys)
                         MSG += Key.KeyStr;
-                System.Console.WriteLine(MSG);
-            }
+                if (MSG != "")
+                {
+                    System.Console.WriteLine(MSG);
+                }
+                else
+                {
+                    System.Console.WriteLine("Error!");
+                }
+          	}
         }
     }
 }
